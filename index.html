@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Заказ шаурмы</title>
+    </head>
+    <boby>
+        <form action="" method="GET">
+            <fieldset style="width: 370px">
+                <legend>Вид мяса</legend>
+                <select name="meat">
+                    <option disabled selected>Выбрать</option>
+                    <option value="pork">Свинина</option>
+                    <option value="beef">Говядина</option>
+                    <option value="lamb">Баранина</option>
+                    <option value="chicken">Курица</option>
+                </select>
+            </fieldset>
+            <fieldset style="width: 370px">
+                <legend>Лаваш</legend>
+                <input type="radio" name="pita" value="thin" id="thin" checked>
+                <label for="thin">Тонкий</label>
+                <br>
+                <input type="radio" name="pita" value="thin" id="thick">
+                <label for="thin">Толстый</label>
+            </fieldset>
+            <fieldset style="width: 370px">
+                <legend>Добавки</legend>
+                <img src="mayonnaise.png">
+                <input type="checkbox" name="additives['mayonnaise']" value="1" id="mayonnaise" checked>
+                <label for="mayonnaise">Майонез</label>
+                <br>
+                <img src="ketchup.png">
+                <input type="checkbox" name="additives['ketchup']" value="1" id="ketchup">
+                <label for="ketchup">Кетчуп</label>
+                <br>
+                <img src="mustard.png">
+                <input type="checkbox" name="additives['mustard']" value="1" id="mustard">
+                <label for="mustard">Горчица</label>
+                <br>
+                <img src="onion.png">
+                <input type="checkbox" name="additives['onion']" value="1" id="onion" checked>
+                <label for="onion">Лук</label>
+            </fieldset>
+            <fieldset style="width: 370px">
+                <legend>Оплата</legend>
+                <input type="radio" name="payment" value="cash" id="cash" checked>
+                <label for="cash">Наличными</label>
+                <br>
+                <input type="radio" name="payment" value="card" id="card">
+                <label for="card">Картой</label>
+            </fieldset>
+            <fieldset style="width: 370px">
+                <legend>Комментарий</legend>
+                <textarea name="comment" style="width: 100%;" rows="7"></textarea>
+            </fieldset>
+            <br>
+            <input type="submit" value="Заказать">
+            <input type="reset" value="Сбросить">            
+</form>
+    </boby>
+</html>
